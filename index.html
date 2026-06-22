@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café am Ring | Hameln</title>
+    <style>
+        :root { --gold: #c5a059; --dark: #2d2d2d; --light: #f4f4f4; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; color: #333; line-height: 1.6; }
+        
+        /* Hero */
+        .hero { background: #333; color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 3rem; margin: 0; color: var(--gold); }
+        
+        /* Layout */
+        .container { max-width: 800px; margin: auto; padding: 40px 20px; }
+        .form-group { margin-bottom: 15px; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; box-sizing: border-box; }
+        
+        .btn-submit { background: var(--gold); color: white; padding: 15px 30px; border: none; cursor: pointer; width: 100%; font-size: 1.1rem; }
+        
+        footer { background: var(--dark); color: white; padding: 40px 20px; text-align: center; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <h1>Café am Ring</h1>
+    <p>Frühstück • Kuchen • Abendausklang</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Tisch reservieren</h2>
+        <form action="mailto:deine-email@beispiel.de" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="Name" required>
+            </div>
+            <div class="form-group">
+                <label>Personenanzahl & Datum/Uhrzeit:</label>
+                <textarea name="Details" rows="3" placeholder="Wann und für wie viele Personen?" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Anfrage senden</button>
+        </form>
+    </section>
+
+    <hr style="margin: 40px 0;">
+
+    <section>
+        <h2>So finden Sie uns</h2>
+        <p>164er Ring 1, 31785 Hameln</p>
+        <div style="width: 100%; height: 300px; background: #eee; display: flex; align-items: center; justify-content: center; color: #666;">
+            [Hier Karte einfügen]
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p><strong>Café am Ring</strong></p>
+    <p>Tel: 05151 1070868 | Täglich 09:00 - 22:00 Uhr</p>
+</footer>
+
+</body>
+</html>
